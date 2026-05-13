@@ -1,0 +1,177 @@
+/* ExpertDoctors.css */
+
+.expert-doctors-section {
+  max-width: 1200px;
+  margin: auto;
+  padding: 60px 20px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.section-title {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  color: #102a43;
+}
+
+/* Carousel */
+
+.carousel-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.doctors-carousel {
+  width: 100%;
+  overflow: hidden;
+}
+
+.doctors-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  width: 100%;
+}
+
+/* Card */
+
+.doctor-card {
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transition: 0.3s ease;
+}
+
+.doctor-card:hover {
+  transform: translateY(-8px);
+}
+
+.doctor-img-wrapper {
+  width: 100%;
+  height: 320px;
+  overflow: hidden;
+}
+
+.doctor-img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.doctor-name {
+  font-size: 24px;
+  font-weight: 700;
+  margin-top: 20px;
+  color: #102a43;
+}
+
+.doctor-specialty {
+  color: #5c6f82;
+  margin: 10px 0 25px;
+  font-size: 16px;
+}
+
+/* Arrows */
+
+.carousel-arrow {
+  position: absolute;
+  top: 45%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
+  background: #0ea5e9;
+  color: white;
+  font-size: 28px;
+  cursor: pointer;
+  z-index: 10;
+  transition: 0.3s ease;
+}
+
+.carousel-arrow:hover {
+  background: #0284c7;
+}
+
+.prev-arrow {
+  left: -20px;
+}
+
+.next-arrow {
+  right: -20px;
+}
+
+/* Dots */
+
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border: none;
+  border-radius: 50%;
+  background: #cbd5e1;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.dot.active {
+  width: 30px;
+  border-radius: 20px;
+  background: #0ea5e9;
+}
+
+/* Tablet */
+
+@media (max-width: 900px) {
+  .doctors-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .section-title {
+    font-size: 32px;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 640px) {
+  .doctors-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .doctor-card {
+    width: 100%;
+  }
+
+  .doctor-img-wrapper {
+    height: 380px;
+  }
+
+  .carousel-arrow {
+    width: 42px;
+    height: 42px;
+    font-size: 22px;
+  }
+
+  .prev-arrow {
+    left: 10px;
+  }
+
+  .next-arrow {
+    right: 10px;
+  }
+
+  .section-title {
+    font-size: 28px;
+  }
+}

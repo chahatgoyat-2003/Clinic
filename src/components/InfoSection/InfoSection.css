@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ===== MAIN SECTION ===== */
+
+.info-section {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  border-radius: 10px;
+  overflow: hidden;
+
+  font-family: Arial, sans-serif;
+}
+
+/* ===== COMMON CARD ===== */
+
+.info-card {
+  padding: 34px 34px 36px;
+
+  min-height: 335px;
+
+  color: #ffffff;
+}
+
+/* ===== CARD COLORS ===== */
+
+.emergency {
+  background: #2ec6c5;
+}
+
+.timetable {
+  background: #4553c7;
+}
+
+.hours {
+  background: #3c49b7;
+}
+
+/* ===== ICON ===== */
+
+.icon {
+  font-size: 42px;
+
+  margin-bottom: 18px;
+
+  color: #ffffff;
+}
+
+/* ===== HEADING ===== */
+
+.info-card h2 {
+  font-size: 28px;
+  font-weight: 700;
+
+  margin-bottom: 22px;
+
+  color: #ffffff;
+}
+
+/* ===== PARAGRAPH ===== */
+
+.info-card p {
+  font-size: 16px;
+
+  line-height: 1.9;
+
+  color: rgba(255, 255, 255, 0.9);
+
+  max-width: 300px;
+
+  margin-bottom: 34px;
+}
+
+/* ===== PHONE ===== */
+
+.info-card h1 {
+  font-size: 32px;
+  font-weight: 700;
+
+  color: #000000;
+}
+
+/* ===== TIMETABLE BUTTON ===== */
+
+.timetable button {
+  margin-top: 5px;
+
+  padding: 14px 34px;
+
+  border: 1px solid rgba(255, 255, 255, 0.35);
+
+  background: transparent;
+
+  color: #ffffff;
+
+  border-radius: 40px;
+
+  font-size: 16px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.3s ease;
+}
+
+.timetable button:hover {
+  background: #ffffff;
+  color: #4553c7;
+}
+
+/* ===== OPENING HOURS ===== */
+
+.timing {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 18px 0;
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+
+  font-size: 16px;
+
+  color: #ffffff;
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 992px) {
+
+  .info-section {
+    grid-template-columns: 1fr;
+  }
+
+  .info-card {
+    min-height: auto;
+  }
+
+}

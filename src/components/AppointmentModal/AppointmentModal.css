@@ -1,0 +1,264 @@
+/* ===== OVERLAY ===== */
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+
+  background: rgba(0,0,0,0.45);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  z-index: 9999;
+
+  padding: 20px;
+}
+
+/* ===== MODAL ===== */
+
+.appointment-modal {
+  width: 100%;
+  max-width: 620px;
+
+  background: #ffffff;
+
+  border-radius: 14px;
+
+  padding: 65px 55px 50px;
+
+  position: relative;
+
+  animation: popup 0.3s ease;
+}
+
+/* ===== POPUP ===== */
+
+@keyframes popup {
+
+  from {
+    opacity: 0;
+    transform: scale(0.92);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* ===== CLOSE BUTTON ===== */
+
+.close-btn {
+  position: absolute;
+
+  top: 28px;
+  right: 30px;
+
+  border: none;
+  background: transparent;
+
+  font-size: 30px;
+  color: #8b8b8b;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.close-btn:hover {
+  color: #111111;
+}
+
+/* ===== TITLE ===== */
+
+.appointment-modal h2 {
+  font-size: 46px;
+  font-weight: 700;
+
+  color: #63adff;
+
+  margin-bottom: 45px;
+}
+
+/* ===== FORM ===== */
+
+.appointment-form {
+  width: 100%;
+}
+
+/* ===== ROW ===== */
+
+.form-row {
+  display: flex;
+  gap: 18px;
+
+  margin-bottom: 18px;
+}
+
+/* ===== INPUT BOX ===== */
+
+.input-box {
+  position: relative;
+  flex: 1;
+}
+
+/* ===== INPUTS ===== */
+
+.input-box input,
+.form-row input,
+.form-row select,
+.full-input {
+  width: 100%;
+  height: 64px;
+
+  border: 1px solid #dddddd;
+  border-radius: 8px;
+
+  background: #ffffff;
+
+  padding: 0 18px;
+
+  font-size: 20px;
+  color: #444444;
+
+  outline: none;
+}
+
+/* ===== SELECT ===== */
+
+.form-row select {
+  cursor: pointer;
+}
+
+/* ===== ICON ===== */
+
+.input-icon {
+  position: absolute;
+
+  top: 50%;
+  right: 18px;
+
+  transform: translateY(-50%);
+
+  font-size: 18px;
+  color: #222222;
+}
+
+/* ===== FULL INPUT ===== */
+
+.full-input {
+  margin-bottom: 24px;
+}
+
+/* ===== PLACEHOLDER ===== */
+
+input::placeholder {
+  color: #9b9b9b;
+}
+
+/* ===== BUTTON ===== */
+
+.confirm-btn {
+  width: 100%;
+  height: 66px;
+
+  border: none;
+  border-radius: 8px;
+
+  background: linear-gradient(
+    90deg,
+    #0b84f8,
+    #63b3ff
+  );
+
+  color: #ffffff;
+
+  font-size: 24px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.confirm-btn:hover {
+  opacity: 0.95;
+}
+
+/* ================================================= */
+/* ================= TABLET ======================== */
+/* ================================================= */
+
+@media (max-width: 768px) {
+
+  .appointment-modal {
+    padding: 45px 25px 35px;
+  }
+
+  .appointment-modal h2 {
+    font-size: 34px;
+    margin-bottom: 32px;
+  }
+
+  .form-row {
+    flex-direction: column;
+  }
+
+  .input-box input,
+  .form-row input,
+  .form-row select,
+  .full-input {
+    height: 58px;
+    font-size: 16px;
+  }
+
+  .confirm-btn {
+    height: 58px;
+    font-size: 20px;
+  }
+}
+
+/* ================================================= */
+/* ================= MOBILE ======================== */
+/* ================================================= */
+
+@media (max-width: 480px) {
+
+  .appointment-modal {
+    padding: 38px 18px 28px;
+    border-radius: 12px;
+  }
+
+  .close-btn {
+    top: 16px;
+    right: 16px;
+
+    font-size: 24px;
+  }
+
+  .appointment-modal h2 {
+    font-size: 26px;
+    margin-bottom: 25px;
+  }
+
+  .input-box input,
+  .form-row input,
+  .form-row select,
+  .full-input {
+    height: 54px;
+    font-size: 15px;
+
+    padding: 0 14px;
+  }
+
+  .input-icon {
+    right: 14px;
+    font-size: 15px;
+  }
+
+  .confirm-btn {
+    height: 54px;
+    font-size: 18px;
+  }
+}

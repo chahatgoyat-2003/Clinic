@@ -1,0 +1,52 @@
+/* ===== MAP SECTION ===== */
+
+.contact-map-section {
+  width: 100%;
+
+  padding: 100px 0;
+
+  background: #f5f7fa;
+}
+
+/* ===== MAP CONTAINER ===== */
+
+.map-container {
+  width: 90%;
+  max-width: 1400px;
+
+  margin: auto;
+
+  border-radius: 10px;
+
+  overflow: hidden;
+
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+/* ===== IFRAME ===== */
+
+.map-container iframe {
+  width: 100%;
+  height: 550px;
+
+  border: none;
+
+  display: block;
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 768px) {
+
+  .contact-map-section {
+    padding: 60px 0;
+  }
+
+  .map-container {
+    width: 95%;
+  }
+
+  .map-container iframe {
+    height: 350px;
+  }
+}

@@ -1,0 +1,149 @@
+/* ===== ABOUT BANNER ===== */
+
+.about-banner {
+  width: 100%;
+  height: 500px;
+
+  position: relative;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: center;
+
+  overflow: hidden;
+}
+
+/* ===== BLUE OVERLAY ===== */
+
+.banner-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background: rgba(77, 167, 245, 0.65);
+}
+
+/* ===== CONTENT ===== */
+
+.banner-content {
+  position: relative;
+  z-index: 2;
+
+  display: flex;
+  align-items: center;
+
+  gap: 35px;
+
+  padding-left: 120px;
+}
+
+/* ===== WHITE LINE ===== */
+
+.banner-line {
+  width: 2px;
+  height: 150px;
+
+  background: #ffffff;
+}
+
+/* ===== TEXT ===== */
+
+.banner-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.banner-text h1 {
+  font-size: 95px;
+  font-weight: 800;
+
+  color: #000000;
+
+  line-height: 1;
+
+  margin: 0;
+}
+
+.banner-text p {
+  font-size: 28px;
+  font-weight: 500;
+
+  margin-top: 15px;
+}
+
+/* ===== HOME LINK ===== */
+
+.home-link {
+  color: #ffffff;
+
+  text-decoration: none;
+
+  transition: 0.3s;
+}
+
+.home-link:hover {
+  color: #000000;
+}
+
+/* ===== ABOUT TEXT ===== */
+
+.slash {
+  color: #ffffff;
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 992px) {
+
+  .about-banner {
+    height: 420px;
+  }
+
+  .banner-content {
+    padding-left: 60px;
+    gap: 25px;
+  }
+
+  .banner-line {
+    height: 110px;
+  }
+
+  .banner-text h1 {
+    font-size: 65px;
+  }
+
+  .banner-text p {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .about-banner {
+    height: 320px;
+  }
+
+  .banner-content {
+    padding-left: 25px;
+    gap: 18px;
+  }
+
+  .banner-line {
+    height: 80px;
+  }
+
+  .banner-text h1 {
+    font-size: 42px;
+  }
+
+  .banner-text p {
+    font-size: 18px;
+    margin-top: 8px;
+  }
+}

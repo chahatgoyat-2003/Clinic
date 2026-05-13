@@ -1,0 +1,269 @@
+.medical-service {
+  width: 100%;
+  background: #f3f5f7;
+  overflow: hidden;
+}
+
+/* ===== TOP TABS ===== */
+
+.service-top {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  background: #eef3f7;
+}
+
+.service-item {
+  height: 115px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 24px;
+  font-weight: 400;
+
+  color: #07153a;
+
+  background: #eef3f7;
+
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.service-item.active {
+  background: #ffffff;
+}
+
+.service-item:hover {
+  background: #ffffff;
+}
+
+/* ===== CONTENT ===== */
+
+.service-content {
+  max-width: 1500px;
+
+  min-height: 645px;
+
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  align-items: center;
+
+  gap: 70px;
+
+  padding: 75px 90px;
+}
+
+/* ===== LEFT SIDE ===== */
+
+.service-left {
+  display: flex;
+  flex-direction: column;
+
+  align-items: flex-start;
+  justify-content: center;
+}
+
+/* ===== ICON ===== */
+
+.service-icon {
+  width: 95px;
+  height: 95px;
+
+  border-radius: 50%;
+  background: #5ca8ff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 38px;
+
+  flex-shrink: 0;
+}
+
+.service-icon svg {
+  font-size: 42px;
+  color: #ffffff;
+}
+
+/* ===== TITLE ===== */
+
+.service-left h2 {
+  font-size: 26px;
+  font-weight: 600;
+
+  line-height: 1.4;
+
+  color: #07153a;
+
+  margin-bottom: 28px;
+
+  max-width: 560px;
+
+  text-align: left;
+}
+
+/* ===== TEXT ===== */
+
+.service-left p {
+  font-size: 20px;
+  line-height: 1.9;
+
+  color: #6e7891;
+
+  max-width: 760px;
+
+  text-align: left;
+}
+
+/* ===== RIGHT IMAGE ===== */
+
+.service-right {
+  width: 100%;
+}
+
+.service-right img {
+  width: 100%;
+  height: 550px;
+
+  object-fit: cover;
+
+  display: block;
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media (max-width: 1200px) {
+
+  .service-content {
+    padding: 70px 50px;
+    gap: 50px;
+  }
+
+  .service-left p {
+    font-size: 18px;
+  }
+
+}
+
+@media (max-width: 992px) {
+
+  .service-content {
+    grid-template-columns: 1fr;
+
+    min-height: auto;
+
+    padding: 60px 40px;
+  }
+
+  .service-right img {
+    width: 100%;
+    height: auto;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .service-top {
+    grid-template-columns: 1fr;
+  }
+
+  .service-item {
+    height: 85px;
+
+    font-size: 20px;
+
+    text-align: center;
+
+    padding: 0 15px;
+  }
+
+  .service-content {
+    grid-template-columns: 1fr;
+
+    min-height: auto;
+
+    padding: 55px 25px;
+
+    gap: 40px;
+  }
+
+  .service-left {
+    width: 100%;
+  }
+
+  .service-left h2 {
+    font-size: 34px;
+
+    max-width: 100%;
+  }
+
+  .service-left p {
+    font-size: 17px;
+    line-height: 1.8;
+
+    max-width: 100%;
+  }
+
+  .service-icon {
+    width: 80px;
+    height: 80px;
+
+    margin-bottom: 30px;
+  }
+
+  .service-icon svg {
+    font-size: 34px;
+  }
+
+  .service-right {
+    width: 100%;
+  }
+
+  .service-right img {
+    width: 100%;
+
+    height: auto;
+
+    object-fit: cover;
+
+    display: block;
+  }
+
+}
+
+@media (max-width: 480px) {
+
+  .service-content {
+    padding: 45px 18px;
+  }
+
+  .service-item {
+    font-size: 18px;
+  }
+
+  .service-left h2 {
+    font-size: 28px;
+  }
+
+  .service-left p {
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  .service-icon {
+    width: 72px;
+    height: 72px;
+  }
+
+  .service-icon svg {
+    font-size: 30px;
+  }
+
+}
