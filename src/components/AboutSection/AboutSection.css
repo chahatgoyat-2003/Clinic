@@ -77,7 +77,7 @@
 .small-title::after {
   content: "";
 
-  width: 70px;
+  width: 240px;
   height: 3px;
 
   background: #60a5fa;
@@ -231,7 +231,22 @@
 
   .small-title {
     font-size: 15px;
+       
   }
+
+  .small-title::after {
+  content: "";
+
+  width: 202px;
+  height: 3px;
+
+  background: #60a5fa;
+
+  position: absolute;
+
+  left: 0;
+  bottom: 0;
+}
 
   .about-content h2 {
     font-size: 36px;

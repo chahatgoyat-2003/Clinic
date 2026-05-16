@@ -19,7 +19,7 @@
 }
 
 .line {
-  width: 85px;
+     width: 452px;
   height: 4px;
   background: #4a8cff;
   margin: 0 auto 28px;
@@ -157,5 +157,14 @@
   .card-content p {
     font-size: 16px;
   }
+
+  .line {
+     width: 309px;
+  height: 4px;
+  background: #4a8cff;
+  margin: 0 auto 28px;
+  border-radius: 20px;
+}
+
 
 }

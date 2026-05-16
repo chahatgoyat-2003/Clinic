@@ -160,7 +160,7 @@ input::placeholder {
 /* ===== BUTTON ===== */
 
 .confirm-btn {
-  width: 100%;
+  width: 33%;
   height: 66px;
 
   border: none;
