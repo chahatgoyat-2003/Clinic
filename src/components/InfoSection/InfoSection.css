@@ -25,6 +25,12 @@
   min-height: 335px;
 
   color: #ffffff;
+
+  /* CENTERING FIX */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Horizontally centers all child elements */
+  text-align: center;  /* Centers text by default */
 }
 
 /* ===== CARD COLORS ===== */
@@ -74,6 +80,9 @@
   max-width: 300px;
 
   margin-bottom: 34px;
+
+  /* Keep paragraph text left-aligned for better readability */
+  text-align: left;
 }
 
 /* ===== PHONE ===== */
@@ -106,6 +115,9 @@
   cursor: pointer;
 
   transition: 0.3s ease;
+
+  /* Ensures button doesn't stretch full width */
+  align-self: center;
 }
 
 .timetable button:hover {
@@ -127,6 +139,10 @@
   font-size: 16px;
 
   color: #ffffff;
+
+  /* Keep hours list left-aligned within centered card */
+  text-align: left;
+  width: 100%;
 }
 
 /* ===== RESPONSIVE ===== */
@@ -140,5 +156,4 @@
   .info-card {
     min-height: auto;
   }
-
 }
